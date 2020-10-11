@@ -1,0 +1,17 @@
+; BIND db file for 149.168.192.in-addr.arpa
+
+$ORIGIN 149.168.192.in-addr.arpa.
+$TTL 86400
+
+149.168.192.in-addr.arpa.   IN      SOA     alice.vaai.      jmkim.alice.vaai. (
+                        2020101101      ; serial number YYMMDDNN
+                        28800           ; Refresh
+                        7200            ; Retry
+                        864000          ; Expire
+                        86400           ; Min TTL
+                        )
+
+        IN      NS      alice.vaai.
+
+11      IN      PTR     alice.vaai.
+12      IN      PTR     bob.vaai.

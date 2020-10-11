@@ -1,0 +1,14 @@
+acl "vaai" {
+        192.168.149.0/24;
+        localhost;
+};
+
+options {
+        directory "/var/cache/bind";
+
+        recursion yes;
+
+        allow-query { vaai; };
+        allow-recursion { vaai; };
+        allow-transfer { vaai; };
+};

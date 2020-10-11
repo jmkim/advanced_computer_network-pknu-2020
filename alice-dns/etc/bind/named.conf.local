@@ -1,0 +1,11 @@
+zone "vaai" {
+        type master;
+        file "/etc/bind/zones/zones.vaai";
+        allow-update { none; };
+};
+
+zone "149.168.192.in-addr.arpa" {
+        type master;
+        file "/etc/bind/zones/zones.149.168.192.in-addr.arpa";
+        allow-update { none; };
+};
